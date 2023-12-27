@@ -1,16 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import App from './App.tsx';
 import './index.css';
 import {BrowserRouter} from "react-router-dom"
 import { createTheme, ThemeProvider } from '@mui/material'
 import { AuthProvider } from './context/AuthContext.tsx';
-import axios from 'axios';
+//import axios from 'axios';
 import {Toaster} from 'react-hot-toast';
 
-
-axios.defaults.baseURL = "https://mern-gpt.azurewebsites.net/api/v1";
-axios.defaults.withCredentials = true;
+//axios.defaults.baseURL = "https://mern-gpt.azurewebsites.net/api/v1";
+//axios.defaults.withCredentials = true;
 const  theme = createTheme({
   typography: {
     fontFamily : "Roboto Slab,serif",
