@@ -18,7 +18,13 @@ export default defineConfig({
     proxy: {
       "/api" : "https://mern-gpt.azurewebsites.net"
     }
-  }
+    
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'main.tsx'), // Adjust the path accordingly
+      },
   // server: {
   //   port: process.env.PORT, // Specify the port for the development server (optional, defaults to 3000)
   //   open: true, // Open the default browser when the development server starts (optional, defaults to false)
