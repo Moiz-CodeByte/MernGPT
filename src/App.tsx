@@ -7,10 +7,22 @@ import Signup from './pages/Signup';
 import Chat from './pages/Chat';
 import NotFound from './pages/NotFound';
 import { useAuth } from './context/AuthContext';
+import { useEffect } from 'react';
+import axios from 'axios';
 function App() {
   const auth = useAuth();
    console.log(useAuth()?.isLoggedIn);
-   
+   useEffect(() => {
+      axios.get("/api/v1")
+      .then((res) =>{
+        console.log(res);
+        
+      })
+      .catch((err)=>{
+        console.log(err);
+        
+      })
+   })
   return (
    <main>
      <Header />
