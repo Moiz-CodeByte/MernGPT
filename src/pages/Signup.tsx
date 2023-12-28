@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import { IoIosLogIn } from "react-icons/io";
-import { Box, Typography, Button } from "@mui/material";
-import CustomizedInput from "../compenents/shared/CustomizedInput";
-import { toast } from "react-hot-toast";
-import { useAuth } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { IoIosLogIn } from 'react-icons/io';
+import { Box, Typography, Button } from '@mui/material';
+import {CustomizedInput} from '../compenents/shared/CustomizedInput';
+import { toast } from 'react-hot-toast';
+import { useAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 const Signup = () => {
   const navigate = useNavigate();
   const auth = useAuth();
