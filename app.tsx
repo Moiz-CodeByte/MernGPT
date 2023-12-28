@@ -1,18 +1,18 @@
 import './src/App.css';
-import {Routes ,Route} from "react-router-dom";
-import Header from './src/compenents/shared/Header';
-import Home from './src/pages/Home';
-import Login from './src/pages/Login';
-import Signup from './src/pages/Signup';
-import Chat from './src/pages/Chat';
-import NotFound from './src/pages/NotFound';
+import {Routes ,Route} from 'react-router-dom';
+import {Header} from './src/compenents/shared/Header';
+import {Home} from './src/pages/Home';
+import {Login} from './src/pages/Login';
+import {Signup} from './src/pages/Signup';
+import {Chat} from './src/pages/Chat';
+import {NotFound} from './src/pages/NotFound';
 import { useAuth } from './src/context/AuthContext';
 import { useEffect } from 'react';
-import axios from 'axios';
-import express from "express";
+import {axios} from 'axios';
+import {express} from 'express';
 function App() {
   const app = express();
-  app.use(express.static("dist"));
+  app.use(express.static('dist'));
   const auth = useAuth();
    console.log(useAuth()?.isLoggedIn);
    useEffect(() => {
