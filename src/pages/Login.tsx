@@ -1,10 +1,10 @@
-import React, {useEffect} from "react";
-import { AiOutlineLogin } from "react-icons/ai";
-import { Box,Typography, Button} from "@mui/material";
-import CustomizedInput from "../compenents/shared/CustomizedInput";
+import React, {useEffect} from 'react';
+import { AiOutlineLogin } from 'react-icons/ai';
+import { Box,Typography, Button} from '@mui/material';
+import {CustomizedInput} from '../compenents/shared/CustomizedInput';
 import {toast} from 'react-hot-toast';
-import { useAuth } from "../context/AuthContext";
-import { useNavigate} from "react-router-dom";
+import { useAuth } from '../context/AuthContext';
+import { useNavigate} from 'react-router-dom';
 const Login = () => {
     const auth = useAuth();
     const navigate = useNavigate();
