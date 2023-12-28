@@ -71,19 +71,19 @@
 // };
 
 // export const useAuth = () => useContext(AuthContext);
-import {
+import React,{
   ReactNode,
   createContext,
   useContext,
   useEffect,
   useState,
-} from "react";
+} from 'react';
 import {
   checkAuthStatus,
   loginUser,
   logoutUser,
   signupUser,
-} from "../helpers/api-communications";
+} from '../helpers/api-communications';
 
 type User = {
   name: string;
