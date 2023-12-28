@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './app.tsx';
+import {React} from 'react'
+import {ReactDOM} from 'react-dom/client'
+import {App} from './app.tsx';
 import './src/index.css';
-import {BrowserRouter} from "react-router-dom"
-import { createTheme, ThemeProvider } from '@mui/material'
+import {BrowserRouter} from 'react-router-dom';
+import { createTheme, ThemeProvider } from '@mui/material';
 import { AuthProvider } from './src/context/AuthContext.tsx';
 //import axios from 'axios';
 import {Toaster} from 'react-hot-toast';
