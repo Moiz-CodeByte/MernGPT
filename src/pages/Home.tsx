@@ -1,6 +1,6 @@
-import { Box, useMediaQuery, useTheme } from "@mui/material";
-import TypingAnim from "../compenents/typer/TypingAnim.tsx";
-import Footer from "../compenents/shared/footer";
+import { Box, useMediaQuery, useTheme } from '@mui/material';
+import {TypingAnim} from '../compenents/typer/TypingAnim.tsx';
+import {Footer} from '../compenents/shared/footer';
 
 const Home = () => {
   const theme = useTheme();
