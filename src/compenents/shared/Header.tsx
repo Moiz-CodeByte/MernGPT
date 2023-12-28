@@ -1,8 +1,8 @@
-import AppBar from "@mui/material/AppBar";
-import ToolBar from "@mui/material/Toolbar"
-import Logo from "./logo";
-import { useAuth } from "../../context/AuthContext";
-import NavigationLink from "./NavigationLink";
+import {AppBar} from '@mui/material/AppBar';
+import {ToolBar} from '@mui/material/Toolbar';
+import {Logo} from './logo';
+import {useAuth} from '../../context/AuthContext';
+import {NavigationLink} from './NavigationLink';
 const Header = () => {
     const auth = useAuth();
     return <AppBar sx={{bgcolor:"transparent", position:"static" , boxShadow:"none"}}>
