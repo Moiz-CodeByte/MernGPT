@@ -1,4 +1,5 @@
-import axios from "axios";
+import {axios} from 'axios';
+import {React} from 'react';
 export const loginUser = async (email  : string, password : string) => {
     const res = await axios.post("/user/login", {email, password});
     if(res.status !== 200){
