@@ -1,6 +1,6 @@
 import { Avatar, Box, Typography } from '@mui/material';
 import { useAuth } from '../../context/AuthContext'
-import {Prism as SyntaxHighlighter} from "react-syntax-highlighter";
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import { coldarkDark} from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function extractCodeFromString(message: string) {
