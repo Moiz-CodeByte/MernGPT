@@ -14,19 +14,23 @@ const Logo = () => {
             <img 
             src = "robot.png"
             alt = "Grok logo"
-            width={"30px"}
-            height={"30px"}
+            width={"40px"}
+            height={"40px"}
             className="image-inverted" 
             />
             
         </Link>
+        <Link to={"/"} style={{textDecoration: "none"}}>
         <Typography sx={{ display:{md: "block", sm: "none", xs: "none"} , 
             mr: "auto",
             fontWeight: "800",
             textShadow: "2px 2px 20px #000",
              }}>
+                
                 <span style={{ fontSize: "20px"}}>MERN</span>-Gpt
+                
              </Typography>
+             </Link>
 
 
 

@@ -45,7 +45,7 @@ console.log("Axios configuration:", {
 });
 const  theme = createTheme({
   typography: {
-    fontFamily : "Roboto Slab,serif",
+    fontFamily : "Open Sans",
     allVariants: {color: "white"}, 
   }
 })  

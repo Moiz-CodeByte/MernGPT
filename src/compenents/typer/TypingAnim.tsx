@@ -9,7 +9,7 @@ const TypingAnim = () => {
         1000,
         "Built With Grok API 🤖",
         2000,
-        "Your Own Customized Llama3 Chatbot 💻",
+        "Your Own Customized Chatbot 💻",
         1500,
       ]}
       speed={50}

@@ -89,7 +89,16 @@ const Chat = () => {
             <ChatItem content={chat.content} role={chat.role} key={index} />))}
         </Box>
         <div style={{width: "100%",borderRadius:8,backgroundColor: "rgb(17,27,39)",display: "flex", margin:"auto" }}>{" "}
-        <input type= "text" ref={inputRef} style={{ width: "100%", backgroundColor: "transparent", padding:"30px",border:"none", outline:"none", color:"white", fontSize: "20px" }}/>
+        <input 
+          type="text" 
+          ref={inputRef} 
+          style={{ width: "100%", backgroundColor: "transparent", padding:"30px",border:"none", outline:"none", color:"white", fontSize: "20px" }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              handleSubmit();
+            }
+          }}
+        />
         <IconButton onClick={handleSubmit} sx={{ml:"auto", color: "white"}}><IoMdSend/></IconButton>
         </div>
         </Box>
