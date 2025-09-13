@@ -62,10 +62,10 @@ const Chat = () => {
       }, [auth]);
       
     return (
-        <Box sx={{display: 'flex', flex:1, width: '100%', height: '100%', mt: 3, gap: 3  }}>
+        <Box sx={{display: 'flex', flexDirection: { xs: "column", sm: "column", md: "column", lg: "row", xl: "row" }, flex:1, width: '100%', height: '100%', mt: 3, gap: 3  }}>
     
-    <Box sx={{display:{md: "flex", xs: "none", sm: "none"}, flex:0.2, flexDirection:"column"}}>
-        <Box sx={{display: "flex", width: "100%",pb: "20px", bgcolor: "rgb(17,29,39)", borderRadius: 5, flexDirection: 'column', mx: 3}}>
+    <Box sx={{display:{md: "flex", xs: "flex", sm: "flex"}, flex:0.2, flexDirection:"column"}}>
+        <Box sx={{display: "flex", width: { xs: "auto", sm: "auto", md: "auto", lg: "100%", xl: "100%"},pb: "20px", bgcolor: "rgb(17,29,39)", borderRadius: 5, flexDirection: 'column', mx: 3}}>
             <Avatar sx={{mx:"auto", my:2,p:0.6,bgcolor:"white", color: "black", fontWeight: 600}}>
            {auth?.user?.name[0]}{auth?.user?.name.split(" ")[1][0]}
                 </Avatar>
@@ -82,7 +82,7 @@ const Chat = () => {
     </Box>
     
     <Box sx={{display: "flex", flex:{md:0.8, xs: 1,sm: 1}, flexDirection: "column", px: 3}}>
-        <Typography sx={{textAlign: "center",fontSize: "35px", color: "white", mb:2, mx: "auto", fontWeight: "500" }}>Model- Llama3 8B</Typography>
+        <Typography sx={{textAlign: "center",fontSize: "35px", color: "white", mb:2, mx: "auto", fontWeight: "500" }}>Model- gpt-oss-120b</Typography>
         <Box sx={{width: "100%", height: "60vh",borderRadius: 3,mx: "auto",display: "flex", flexDirection: "column", overflow: "scroll", overflowX: "hidden", overflowY: "auto",  scrollBehavior: "smooth"}}>
             {chatMessages.map((chat, index)=>(
                 

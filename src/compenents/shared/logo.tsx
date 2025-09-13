@@ -13,7 +13,7 @@ const Logo = () => {
         <Link to={"/"}>
             <img 
             src = "robot.png"
-            alt = "Grok logo"
+            alt = "Groq logo"
             width={"40px"}
             height={"40px"}
             className="image-inverted" 

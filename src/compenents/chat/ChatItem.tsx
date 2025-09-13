@@ -31,7 +31,7 @@ export const ChatItem = ({content, role}: {content: string, role: "user" | "assi
   return (
     role === "assistant"? <Box sx={{display: "flex", p: 2, bgcolor: "#004d5612", my: 1, gap: 2, borderRadius: 2}}>
       <Avatar sx={{ml: 0, }}>
-        <img src='robot.png' alt='grok' width={"30px"}></img>
+        <img src='robot.png' alt='groq' width={"30px"}></img>
       </Avatar>
       <Box>
         {!messageBlock && (<Typography fontSize={"20px"}>{content}</Typography>)}

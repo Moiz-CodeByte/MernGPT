@@ -35,13 +35,14 @@ const Home = () => {
             alt="robot"
             style={{ width: "200px", margin: "auto" }}
           />
-          <img
-            className="image-inverted rotate"
-            src="robot.png"
-            alt="grok"
-            style={{ width: "200px", margin: "auto" }}
-          />
-        </Box>
+          <Box
+          component="img"
+          className="image-inverted rotate"
+          src="robot.png"
+          alt="groq"
+           sx={{display: { xs: "none", sm: "none", md: "flex", lg: "flex", xl: "flex" }, width: "200px", margin: "auto", }}
+           />
+          </Box>
         <Box sx={{ display: "flex", mx: "auto" }}>
           <img
             src="chat.png"
